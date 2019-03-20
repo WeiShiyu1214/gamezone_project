@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+{% load staticfiles %}
+
+<html>
+	<head>
+		<title>
+			GameZone!
+			{% block title_block %}
+				Have Fun!
+			{% endblock %}
+		</title>
+	</head>
+	<body>
+		<div>
+			{% block body_block %}
+			{% endblock %}
+		</div>
+		<hr />
+		<div>
+			<ul>
+				<li><a href="{% url 'about' %}">About</a></li>
+				<li><a href="{% url 'index' %}">Home Page</a></li>
+			</ul>
+		</div>
+	</body>
+</html>

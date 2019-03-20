@@ -1,0 +1,18 @@
+{% extends 'gamezone/base.html' %}
+{% load staticfiles %}
+{% block title_block %}
+	Home Page
+{% endblock %}
+
+
+{% block body_block %}
+		<img src="{% static "images/logo.gif" %}"alt="Picture" />
+		<h1>GameZone!</h1>
+		<div>
+			Hi, partner!<br />
+			<strong>{{ boldmessage }}</strong><br />
+		</div>
+		<div>
+			<a href="/gamezone/about/">About</a><br />
+		</div>
+{% endblock %}
